@@ -124,6 +124,10 @@ p {
     font-weight: 500;
 }
 
+.table-row:hover{
+  background: hsl(0, 0%, 89%);;
+}
+
 .table-content{
   white-space: nowrap;
   text-align: middle;
@@ -143,11 +147,25 @@ table{
   padding: 8px;
   border: 1px solid hsl(0, 0%, 89%);
   border-radius: 2rem;
+  
+}
+th, .table-content__row1{
+  color : #696969
 }
 
-th,td{
+ th, td{
+  text-align: left;
   padding: 8px;
-  border-collapse: collapse;
-  border-bottom: 1px solid hsl(0, 0%, 89%);
+  align-items: center;
+ }
+ .table-content__row1{
+  display: inline-flex;
+  vertical-align: middle;
+ }
 
-}
+.table-row, td{
+  border-bottom: 1px black;
+ }
+
+ 
+
