@@ -15,12 +15,10 @@ html, body {
   width: 100%;
 }
 body {
-  min-height: 100vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
   display: flex;
   flex-direction: column;
 }
+
 p {
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -135,18 +133,9 @@ p {
   
 }
 
-h2{
-  display: block;
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-}
 table{
-  padding: 8px;
-  border: 1px solid hsl(0, 0%, 89%);
-  border-radius: 2rem;
+
+  border-collapse: collapse;
   
 }
 th, .table-content__row1{
@@ -155,17 +144,31 @@ th, .table-content__row1{
 
  th, td{
   text-align: left;
-  padding: 8px;
   align-items: center;
+  padding-right: 24px;
+  padding-left: 24px;
+  
  }
  .table-content__row1{
   display: inline-flex;
   vertical-align: middle;
- }
-
-.table-row, td{
-  border-top: 1px aqua;
- }
-
+  width: 100%;
+  justify-content: space-evenly;
  
+
+ }
+
+ td{
+  
+ }
+  .table-border{
+    border-radius: 16px;
+    border: 1px solid hsl(0, 0%, 89%);
+
+  }
+
+  .table-row{
+    border-top: 1px solid hsl(0, 0%, 89%);
+
+  }
 
