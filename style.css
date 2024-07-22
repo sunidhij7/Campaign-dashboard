@@ -28,17 +28,31 @@ p {
 
 /* Header */
 .header__top__button {
-  background: linear-gradient(0deg, #1b1b1b 0%, #2c2c2c 100%);
+  background-color: black;
   color: white;
   text-align: center;
   float: right;
   font-family: "Roboto-Medium", "system-ui", "-apple-system", sans-serif,
     "Inter-SemiBold", "Arial", "ui-sans-serif", "system-ui", "-apple-system";
-  font-size: 1rem;
   line-height: 1.5rem;
-  padding: 8px 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   border: none;
   border-radius: 1rem;
+}
+.header__top__button:hover{
+ cursor: pointer;
+ background-color: #212020;
+}
+
+
+.header-button-text{
+  padding-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+
 }
 
 
@@ -47,17 +61,38 @@ p {
   float: right;
   background: white;
   border: none;
-  color: hsl(245, 67%, 60.8%);
+  color: hsl(245, 67%, 61%);
   font-family: "Roboto-Medium", "system-ui", "-apple-system", sans-serif,
     "Inter-SemiBold", "Arial", "ui-sans-serif", "system-ui", "-apple-system";
   font-size: 1rem;
   line-height: 1rem;
   padding: 12px;
+ 
 }
 .body-cards__button:hover {
-  background-color: hsl(244, 65.2%, 91%);
+  background-color:hsl(244, 70%, 96.1%);
   border: none;
   border-radius: 1rem;
+  cursor: pointer;
+
+}
+
+
+.body-cards__title--button {
+  float: right;
+  background: white;
+  border: none;
+  font-size: 1rem;
+  line-height: 1rem;
+  padding: 8px;
+ 
+}
+.body-cards__title--button:hover {
+  background-color:hsl(244, 70%, 96.1%);
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+
 }
 
 .body-cards {
@@ -67,23 +102,71 @@ p {
   grid-column-gap: 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-top: 2rem;
+  font-family:"Inter-Regular", "Arial", sans-serif, "ui-sans-serif", "system-ui", "-apple-system", sans-serif, 'Roboto';
+
 }
 .body-card {
-  flex-grow: 1;
+  display: grid;
   height: 104px;
   border: 1px solid hsl(0, 0%, 89%);
   border-radius: 1rem;
   color: inherit;
-  padding: 8px;
+  align-items: center;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 100%;
+  width: 100%;
+vertical-align: middle;
+
+}
+.body-cards__number{
+  font-weight: 300;
+  padding-right: 1rem;
+  height: 20px;
+  margin: 0;
+  
+}
+.body-card__left{
+padding-left: 1.2rem;
+}
+
+.body-card__left__top{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+
+}
+
+.body-card__left__bottom{
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.body-cards__percentage{
+  font-weight: 200;
+  font-size: smaller;
+  padding:none;
+  background-color: #9d9d9d;
+  border-radius: 0.5rem;
+  vertical-align: bottom;
+}
+
+.body-card__right{
+  padding-right: 3rem;
+
 }
 .body-card:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+
 }
 .body-cards__title {
   padding-right: 8px;
+  color: #696969;
+  display: flex;
+  height: 20px;
+  margin: 0;
+
 }
 
 .header__top {
@@ -113,13 +196,15 @@ p {
 
 /* Table Related */
 .table-title{
-    font-family:"Inter-Regular", "Arial", sans-serif, "ui-sans-serif", "system-ui", "-apple-system", sans-serif, 'Roboto';
     color: black;
     font-size: 1.563rem;
     line-height:2rem;
     margin-top: 3rem;
     font-style: normal;
     font-weight: 500;
+  line-height: 40px;
+  font-family: "Tomato-Grotesk-Regular", "Verdana", sans-serif, "ui-sans-serif",
+    "system-ui", "-apple-system";
 }
 
 .table-row:hover{
@@ -136,7 +221,9 @@ p {
 table{
 
   border-collapse: collapse;
-  
+  font-size: 16px;
+  line-height: 3rem;
+  font-family:"Inter-Regular", "Arial", sans-serif, "ui-sans-serif", "system-ui", "-apple-system", sans-serif, 'Roboto';
 }
 th, .table-content__row1{
   color : #696969
@@ -151,10 +238,10 @@ th, .table-content__row1{
  }
  .table-content__row1{
   display: inline-flex;
-  vertical-align: middle;
+  vertical-align: text-top;
   width: 100%;
   justify-content: space-evenly;
- 
+  align-content: center
 
  }
 
