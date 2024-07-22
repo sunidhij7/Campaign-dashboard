@@ -238,7 +238,6 @@ th, .table-content__row1{
  }
  .table-content__row1{
   display: inline-flex;
-  vertical-align: text-top;
   width: 100%;
   justify-content: space-evenly;
   align-content: center
