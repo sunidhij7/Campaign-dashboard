@@ -47,12 +47,32 @@ p {
  background-color: #212020;
 }
 
-
 .header-button-text{
   padding-bottom: 1rem;
   font-size: 1.1rem;
   font-weight: 500;
 
+}
+.header__bottom
+{
+margin-top: 1.5rem;}
+
+.header__text--button{
+  color: #6358DE;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-left: 1rem;
+  font-family: "Roboto-Medium", "system-ui", "-apple-system", sans-serif,
+    "Inter-SemiBold", "Arial", "ui-sans-serif", "system-ui", "-apple-system";
+    background-color: white;
+    border: 0;
+}
+
+.header__text--button:hover{
+  cursor: pointer;
+  background-color:hsl(244, 70%, 96.1%);
+  border-radius: 0.7rem;
+  padding: 0.5rem;
 }
 
 
@@ -160,9 +180,9 @@ padding-left: 1.2rem;
 .body-cards__percentage{
   font-weight: 200;
   font-size: smaller;
-  padding:none;
-  background-color: #9d9d9d;
-  border-radius: 0.5rem;
+  padding:0.2rem;
+  background-color: #d3d1d1;
+  border-radius: 0.6rem;
   vertical-align: bottom;
 }
 
@@ -268,5 +288,29 @@ th, .table-content__row1{
   .table-row{
     border-top: 1px solid hsl(0, 0%, 89%);
     
+  }
+
+  .table-bold-text{
+    font-weight: 600;
+  }
+
+  .table-column span{
+    margin-right: 1rem;
+  }
+
+  .table-column{
+    align-items: center;
+  }
+  .table-percentage{
+    font-size: small;
+    color:#696969
+  }
+
+  .table-green{
+    color: #0B996f;
+  }
+
+  .table-red{
+    color: #ff6e3d;
   }
 
