@@ -69,12 +69,27 @@ p {
   padding: 12px;
  
 }
-.body-cards__button:hover {
+.body-cards__button:hover{
   background-color:hsl(244, 70%, 96.1%);
   border: none;
   border-radius: 1rem;
   cursor: pointer;
 
+}
+
+.icon:hover{
+  background-color:hsl(244, 70%, 96.1%);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.icon{
+  
+}
+
+a:visited{
+  color: black;
 }
 
 
